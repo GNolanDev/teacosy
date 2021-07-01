@@ -7,9 +7,94 @@ html {
   box-sizing: inherit;
 }
 
+li {
+  display: inline-block;
+}
+
 body {
   background-color: black;
   color: seashell;
   font-family: Helvetica, sans-serif;
   font-size: 22px;
+  opacity: 0.9;
+  text-align: center;
+}
+
+header {
+  align-items: center;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  display: flex;
+  height: 69px;
+  justify-content: space-between;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  padding-top: 69px;
+}
+
+#logo {
+  height: 50px;
+  padding: 0 10px;
+}
+
+header a {
+  color: seashell;
+  padding: 0 10px;
+  text-decoration: underline;
+}
+
+header nav {
+  flex-basis: 420px;
+  flex-shrink: 0;
+}
+
+#mission {
+  background-image: url("resources/images/img-mission-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#mission h2,
+#mission h4 {
+  background-color: black;
+  margin: 0;
+  padding: 0.2em 0;
+}
+
+#featured {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#container figure {
+  flex-shrink: 1;
+  margin: 16px 14px;
+  max-height: 230px;
+  max-width: 300px;
+}
+
+#container img {
+  /*height: auto;*/
+  width: 100%;
+}
+
+#container figcaption {
+  padding: 6px 0;
 }
