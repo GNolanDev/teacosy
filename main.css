@@ -73,28 +73,73 @@ header nav {
 }
 
 #featured {
-  margin: 0 auto;
+  margin: 80px auto 0;
   max-width: 1000px;
 }
 
-#container {
+.flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-#container figure {
+#featured figure {
   flex-shrink: 1;
   margin: 16px 14px;
   max-height: 230px;
   max-width: 300px;
 }
 
-#container img {
+#featured img {
   /*height: auto;*/
   width: 100%;
 }
 
-#container figcaption {
+#featured figcaption {
   padding: 6px 0;
+}
+
+#locations {
+  background-image: url("resources/images/img-locations-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 60px auto 0;
+  max-width: 1200px;
+  min-height: 500px;
+}
+
+#locations h2,
+#locations h3 {
+  margin: 0;
+  padding: 0;
+}
+
+#locations h2 {
+  margin: 60px 0 15px 0;
+}
+
+#locations address {
+  background-color: black;
+  font-style: normal;
+  line-height: 3.5rem;
+  margin: 5px 20px;
+  padding-bottom: 15px;
+  padding-top: 5px;
+  width: 300px;
+}
+
+#contact-us {
+  height: 200px;
+}
+
+#contact-us h2 {
+  margin-top: 8px;
+}
+
+footer {
+  margin: 20px;
+  text-align: left;
 }
